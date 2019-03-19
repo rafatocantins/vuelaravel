@@ -2,7 +2,7 @@
 
 CMS Structure with Laravel and Vue.js 
 
-# Part One - Fisrt Commit
+# Part One - First Commit
 https://pusher.com/tutorials/cms-laravel-vue-part-1
 
 - Setting up database
