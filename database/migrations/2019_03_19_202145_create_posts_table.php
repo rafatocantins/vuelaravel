@@ -14,7 +14,12 @@ class CreatePostsTable extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
+            /** the user_id property is used because we want to create a relationship between the User and Post Model  */
+            $table->integer('user_id')->unsigned();
+            $table->string('title');
+            $table->text('body');
+            $table->binary('image')->nullable();
             $table->timestamps();
         });
     }
