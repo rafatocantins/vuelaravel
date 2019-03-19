@@ -82,4 +82,19 @@ class PostController extends Controller
     {
         //
     }
+
+    // function to display in view all posts -- inluding a paginate function
+
+    public function all()
+    {
+        return view('landing', [
+            'posts' => Post::latest()->paginate(5)
+        ]);
+    }
+
+    // function to display post
+    public function single(Post $post)
+    {
+        return view('single', compact('post'));
+    }
 }
