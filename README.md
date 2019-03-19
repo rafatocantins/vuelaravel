@@ -11,3 +11,7 @@ https://pusher.com/tutorials/cms-laravel-vue-part-1
 - Setting up user role
 - Testing the Application
 
+# Part Two - Setting Up the Post Model
+https://pusher.com/tutorials/cms-laravel-vue-part-2
+
+- Setting up Post model
