@@ -37,7 +37,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    /** Create a many-to-manuy relationship between the user and roles */
+    /** Create a many-to-many relationship between the user and roles */
     public function roles()
     {
         return $this->belongsToMany(Role::class);
@@ -56,10 +56,14 @@ class User extends Authenticatable
         }
     }
 
+    /** Function to check if user has any role */
+
     public function hasAnyRole($roles): bool
     {
         return (bool) $this->roles()->whereIn('name', $roles)->first();
     }
+
+    /** Function to return User's Role */
 
     public function hasRole($role): bool
     {

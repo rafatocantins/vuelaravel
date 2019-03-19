@@ -17,3 +17,4 @@ https://pusher.com/tutorials/cms-laravel-vue-part-2
 - Setting up Post model
 - Creating a database seeder for the Post table
 - Defining the relationships
+- Setting up the routes
