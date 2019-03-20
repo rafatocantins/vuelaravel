@@ -15,7 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        //  return a JSON formatted collection of all of the stored posts
+        return PostResource::collection(Post::latest()->paginate(5));
     }
 
     /**
@@ -74,7 +75,8 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        // return a single instance of a post resource upon API query
+        return new PostResource($post);
     }
 
     /**

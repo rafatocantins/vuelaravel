@@ -29,6 +29,7 @@ https://pusher.com/tutorials/cms-laravel-vue-part-3
 - Defining API routes
 - Creating the Post resource
 - Building the handler action for the create operation
+- Building the handler action for the read operations
 
 
 
