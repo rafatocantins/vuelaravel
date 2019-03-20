@@ -11,4 +11,7 @@ class Post extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    // mass assignment on specific fields
+    protected $fillable = ['user_id', 'title', 'body', 'image'];
 }
