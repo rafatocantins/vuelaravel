@@ -19,3 +19,4 @@ https://pusher.com/tutorials/cms-laravel-vue-part-2
 - Defining the relationships
 - Setting up the routes
 - Setting up the Post Controller
+- Building my views
