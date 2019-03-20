@@ -28,6 +28,7 @@ https://pusher.com/tutorials/cms-laravel-vue-part-3
 - Allowing mass assignment on specified fields | https://laravel.com/docs/5.6/eloquent#mass-assignment
 - Defining API routes
 - Creating the Post resource
+- Building the handler action for the create operation
 
 
 

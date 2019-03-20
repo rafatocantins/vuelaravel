@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use Illuminate\Http\Request;
+use App\Http\Resources\PostResource;
 
 class PostController extends Controller
 {
@@ -35,7 +36,34 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validate the request.
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required',
+            'user_id' => 'required',
+            'image' => 'required|mimes:jpeg,png,jpg,gif,svg',
+        ]);
+
+        // Create a new post.
+        $post = new Post;
+
+        // Return the post as a PostResource, which in turn returns a JSON formatted response.
+
+        if($request->hasFile('image')) {
+            $image = $request->file('image');
+            $name = str_slug($request->title).'.'.$image->getClientOriginalExtension();
+            $destinationPath = public_path('/uploads/posts');
+            $imagePath = $destinationPath . "/" . $name;
+            $image->move($destinationPath, $name);
+            $post->image = $name;
+        }
+
+        $post->user_id = $request->user_id;
+        $post->title = $request->title;
+        $post->body = $request->body;
+        $post->save();
+
+        return new PostResource($post);
     }
 
     /**
