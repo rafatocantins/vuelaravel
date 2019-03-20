@@ -27,6 +27,7 @@ https://pusher.com/tutorials/cms-laravel-vue-part-3
 - Building the API using Laravel’s API resources | https://laravel.com/docs/5.6/eloquent-resources
 - Allowing mass assignment on specified fields | https://laravel.com/docs/5.6/eloquent#mass-assignment
 - Defining API routes
+- Creating the Post resource
 
 
 
