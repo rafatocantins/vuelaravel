@@ -118,7 +118,10 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        // delete post
+        $post->delete();
+
+        return response()->json(null, 204);
     }
 
     // function to display in view all posts -- inluding a paginate function
