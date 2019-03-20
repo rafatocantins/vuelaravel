@@ -32,6 +32,8 @@ https://pusher.com/tutorials/cms-laravel-vue-part-3
 - Building the handler action for the read operations
 - Building the handler action for the update operation
 - Building the handler action for the delete operation
+- Adding the admin controller
+
 
 
 
