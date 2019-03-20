@@ -21,7 +21,7 @@ https://pusher.com/tutorials/cms-laravel-vue-part-2
 - Setting up the Post Controller
 - Building my views
 
-#Building an API
+# Part three - Building an API
 https://pusher.com/tutorials/cms-laravel-vue-part-3
 
 - Building the API using Laravel’s API resources | https://laravel.com/docs/5.6/eloquent-resources
