@@ -34,6 +34,12 @@ https://pusher.com/tutorials/cms-laravel-vue-part-3
 - Building the handler action for the delete operation
 - Adding the admin controller
 
+# Part Four - Building the Dashboard
+https://pusher.com/tutorials/cms-laravel-vue-part-4
+
+- Setting up Vue and VueRouter // Laravel ships with Vue out of the box so we do not need to use the Vue-CLI or reference Vue from a CDN
+
+
 
 
 
